@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms/Deluxe Hotel</title>
+    <style>
+        :root {
+            --primary-color: #35424a;
+            --secondary-color: #ffffff;
+            --accent-color: #f4f4f4;
+            --hover-color: #ffffff;
+            --hover-text-color: #35424a;
+        }
+
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin-left: 20px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .header-right img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        #header-but1 {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--secondary-color);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.5s ease-in;
+        }
+
+        #header-but1:hover {
+            background-color: var(--hover-color);
+            color: var(--hover-text-color);
+            border: 1px solid var(--hover-text-color);
+            transform: scale(1.1);
+        }
+
+        nav {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 10px 0;
+            text-align: center;
+            font-size: larger;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: 0.5s ease-in;
+        }
+
+        nav ul li a[aria-current="page"] {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        nav ul li a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Deluxe Hotel</h1>
+            <div class="header-right">
+                <img src="images/384577f8c5d99ddb5be9b933e933787d.jpg" alt="Hotel Logo">
+                <button id="header-but1">BOOK NOW</button>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rooms.html" aria-current="page">Rooms</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- the javascript code start from here  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const headerButton = document.getElementById("header-but1");
+            headerButton.addEventListener("click", function () {
+                window.location.href = "booking.html";
+            });
+        });
+    </script>
+</body>
+
+</html>

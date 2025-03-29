@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact/Deluxe Hotel</title>
+    <style>
+        :root {
+            --primary-color: #35424a;
+            --secondary-color: #ffffff;
+            --accent-color: #f4f4f4;
+            --hover-color: #ffffff;
+            --hover-text-color: #35424a;
+        }
+
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin-left: 20px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .header-right img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        #header-but1 {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--secondary-color);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.5s ease-in;
+        }
+
+        #header-but1:hover {
+            background-color: var(--hover-color);
+            color: var(--hover-text-color);
+            border: 1px solid var(--hover-text-color);
+            transform: scale(1.1);
+        }
+
+        nav {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 10px 0;
+            text-align: center;
+            font-size: larger;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: 0.5s ease-in;
+        }
+
+        nav ul li a[aria-current="page"] {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        nav ul li a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+            font-size: 25px;
+        }
+
+        .contact-form {
+            background: var(--accent-color);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+
+        }
+
+        .hiddenform {
+            display: none;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: larger;
+
+
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.5s ease-in;
+            width: 20%;
+        }
+
+        .contact-form button:hover {
+            background-color: var(--hover-color);
+            color: var(--hover-text-color);
+            border: 1px solid var(--hover-text-color);
+            transform: scale(1.1);
+        }
+
+        .description {
+            padding: 20px;
+            background-color: var(--accent-color);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .description h1 {
+            margin-bottom: 20px;
+        }
+
+        .description p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .description strong {
+            color: var(--primary-color);
+        }
+
+        #showcontactform {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--secondary-color);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.5s ease-in;
+            margin-left: 50%;
+            transform: translate(-50%);
+        }
+
+        #showcontactform:hover {
+            background-color: var(--hover-color);
+            color: var(--hover-text-color);
+            border: 1px solid var(--hover-text-color);
+            transform: scale(1.1) translate(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Deluxe Hotel</h1>
+            <div class="header-right">
+                <img src="images/384577f8c5d99ddb5be9b933e933787d.jpg" alt="Hotel Logo">
+                <button id="header-but1">BOOK NOW</button>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="description">
+            <h1>
+                Contact Us – We're Here to Help!
+            </h1>
+            <p>
+                At <strong>Deluxe Hotel</strong>, we are committed to providing you with the best possible experience
+                during your stay.
+                Your feedback is invaluable to us, and we want to ensure that all your needs are met. Whether you have a
+                question, a concern, or simply want to share your thoughts, we are here to listen and assist you.
+            </p>
+            <p>
+                We value our guests and are always happy to assist you. If you have any questions, concerns, or
+                requests, please feel free to reach out to us using the contact form below. Whether you need assistance
+                with room bookings, special requests, event planning, or feedback regarding your stay, our team is
+                available to help.
+
+                If you encountered any issues during your stay, such as room service delays, maintenance problems,
+                billing concerns, or any other inconvenience, please share your experience with us. We take every
+                complaint seriously and aim to resolve it as quickly as possible to enhance your stay.
+
+                For general inquiries about our hotel facilities, check-in and check-out timings, dining options, or
+                local attractions, don’t hesitate to get in touch. If you require urgent assistance, you can also
+                contact our customer service team via phone or email for a faster response.
+
+                Thank you for choosing <STrong>Deluxe Hotel</STrong>. We look forward to serving you and making your
+                experience
+                memorable!
+            </p>
+
+            <button id="showcontactform">Click ME For CONTACT</button>
+        </div>
+
+        <div class="contact-form hiddenform" style="padding: 20px; text-align: center;">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+
+
+        <!-- the javascript to show the form when the button is clicked -->
+        <script>
+            document.getElementById('showcontactform').addEventListener('click', function () {
+                var form = document.querySelector('.contact-form');
+                form.classList.toggle('hiddenform');
+            });
+            document.getElementById('header-but1').addEventListener('click', function () {
+                window.location.href = 'booking.html';
+            });
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to Deluxe Hotel - Experience luxury and comfort with our premium accommodations.">
+    <meta name="keywords" content="Hotel, Deluxe, Luxury, Rooms, Suites">
+    <meta name="author" content="Deluxe Hotel">
+
+    <title>Deluxe Hotel</title>
+    <style>
+        :root {
+            --primary-color: #35424a;
+            --secondary-color: #ffffff;
+            --accent-color: #f4f4f4;
+            --hover-color: #ffffff;
+            --hover-text-color: #35424a;
+        }
+
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin-left: 20px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .header-right img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        #header-but1 {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--secondary-color);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.5s ease-in;
+        }
+
+        #header-but1:hover {
+            background-color: var(--hover-color);
+            color: var(--hover-text-color);
+            border: 1px solid var(--hover-text-color);
+            transform: scale(1.1);
+        }
+
+        nav {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 10px 0;
+            text-align: center;
+            font-size: larger;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: 0.5s ease-in;
+        }
+
+        nav ul li a[aria-current="page"] {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        nav ul li a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+            font-size: 25px;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--secondary-color);
+        }
+
+        .heading h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .heading p {
+            color: var(--primary-color);
+            font-size: 18px;
+            margin: 0 20px;
+        }
+
+        .rooms {
+            width: 31%;
+            margin: 3px;
+            margin-top: 30px;
+            margin-left: 18px;
+            padding: 20px;
+            background-color: var(--accent-color);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 410px;
+            display: inline-flex;
+            flex-direction: column;
+            transition: 0.5s ease-in;
+        }
+
+        .rooms:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .rooms img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .rooms h2 {
+            margin: 10px 0;
+            color: var(--primary-color);
+        }
+
+
+        .but1 {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.5s ease-in;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .but2 {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.5s ease-in;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .but1:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border: 1px solid var(--hover-text-color);
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+        .but2:hover {
+            background-color: var(--hover-color);
+            color: var(--hover-text-color);
+            border: 1px solid var(--hover-text-color);
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .rooms {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-right {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Deluxe Hotel</h1>
+            <div class="header-right">
+                <img src="/images/384577f8c5d99ddb5be9b933e933787d.jpg" alt="Hotel Logo">
+                <button id="header-but1">BOOK NOW</button>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html" aria-current="page">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="heading">
+                <h1>Accommodations</h1>
+                <p>Choose from an arena of 288 rooms and suites as you check-in at the ﬁve-star hotel. Whether
+                    contemporary
+                    or classic, each room category promises you the comforts of your home, away from home.</p>
+            </section>
+            <section class="rooms">
+                <img src="images/deluxe.jpg" alt="Deluxe Room">
+                <h2>DELUXE</h2>
+                <p>Our Deluxe room offers chicly embellished decor fused with contemporary design and modern amenities
+                    to
+                    ensure that you enjoy.</p>
+                <div>
+                    <button class="but1">Discover More</button>
+                    <button class="but2">Reserve More</button>
+                </div>
+            </section>
+            <section class="rooms"> <img src="images/Pearl.jpg" alt="">
+                <h2>PEARL</h2>
+                <p>Living up to its name, the Pearl room adorns elegant, earthy tones and luxurious textures offering
+                    gorgeous city views.</p>
+                <div class="btn0"> <button class="but1">Discover More</button> <button class="but2">Reserve
+                        More</button> </div>
+            </section>
+            <section class="rooms"> <img src="images/executive.jpg" alt="">
+                <h2>EXECUTIVE</h2>
+                <p>Offering an aesthetically pleasing and contemporary decor, our Executive room is furnished with a
+                    king sized bed, spacious bathroom, writing desk and</p>
+                <div class="btn0"> <button class="but1">Discover More</button> <button class="but2">Reserve
+                        More</button> </div>
+            </section>
+            <section class="rooms"> <img src="images/executive deluxe.jpg" alt="">
+                <h2>EXECUTIVE SUITE</h2>
+                <p>Offering pure luxury and class, our Executive suite strikes the perfect balance between work and
+                    comfort. The suite gives you exclusive complimentary access to the Executive Lounge. </p>
+                <div class="btn0"> <button class="but1">Discover More</button> <button class="but2">Reserve
+                        More</button> </div>
+            </section>
+            <section class="rooms"> <img src="images/Deluxe-Suite.jpg" alt="">
+                <h2>DELUXE SUITE</h2>
+                <p>A 630 square feet spacious suite overlooking the beautiful city of Karachi. The Deluxe Suite is the
+                    perfect blend of magniﬁcence and comfort. </p>
+                <div class="btn0"> <button class="but1">Discover More</button> <button class="but2">Reserve
+                        More</button>
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy; 2025 Deluxe Hotel. All rights reserved.</p>
+        </footer>
+    </div>
+
+
+    <!-- the javascript start from here -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const headerButton = document.getElementById("header-but1");
+            headerButton.addEventListener("click", function () {
+                window.location.href = "booking.html";
+            });
+        });
+    </script>
+</body>
+
+</html>
