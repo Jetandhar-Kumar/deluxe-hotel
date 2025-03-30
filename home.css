@@ -4,6 +4,7 @@
     background-color: var(--secondary-color);
 }
 
+
 .heading h1 {
     color: var(--primary-color);
     margin-bottom: 10px;
@@ -14,8 +15,12 @@
     font-size: 18px;
     margin: 0 20px;
 }
+.heading img{
+    width: 100%;
+    height: 110%;
+}
 
-main {
+.main-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -96,6 +101,60 @@ main {
     transform: scale(1.1);
     text-decoration: underline;
 }
+
+
+.second-containt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 30px; 
+    background-color: var(--secondary-color); 
+    width: 85%; 
+    margin-top: 12px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /
+}
+
+
+.what-we-have {
+    width: 28%; 
+    margin: 10px; 
+    padding: 20px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 420px; 
+    display: inline-flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out; 
+}
+
+.what-we-have:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+
+.what-we-have img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    }
+.what-we-have p{
+    margin: 2px;
+    text-align: justify;
+}
+.what-we-have h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .rooms {
         width: 100%;
