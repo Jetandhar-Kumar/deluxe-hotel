@@ -4,16 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(images/Hotel\ Exterior\ -\ night\ \(1\).jpg);
+        }
+
+        #home {
+            width: 20%;
+            opacity: 0.8;
+            position: relative;
+            right: 20%;
+            bottom: 40%;
+        }
+
+        .booking-form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            opacity: 0.9;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>BooKing Form</h1>
-        <form action="">
+    <button id="home">Home</button>
+    <form class="booking-form">
+        <h2>Hotel Booking Form</h2>
 
-        </form>
-    </div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+        <label for="checkin">Check-in Date</label>
+        <input type="date" id="checkin" required>
+
+        <label for="checkout">Check-out Date</label>
+        <input type="date" id="checkout" required>
+
+        <label for="room">Room Type</label>
+        <select id="room" required>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="suite">Suite</option>
+        </select>
+
+        <label for="requests">Special Requests</label>
+        <textarea id="requests" rows="3" placeholder="Any special requests?"></textarea>
+
+        <button type="submit">Book Now</button>
+    </form>
+    <script>
+        document.getElementById("home").addEventListener("click", function () {
+            window.location.href = "index.html"
+        })
+    </script>
 </body>
 
 </html>
