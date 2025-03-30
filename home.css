@@ -1,0 +1,113 @@
+.heading {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.heading h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.heading p {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--accent-color);
+    width: 85%;
+}
+
+.rooms {
+    width: 31%;
+    margin: 3px;
+    margin-top: 30px;
+    margin-left: 18px;
+    padding: 20px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 410px;
+    display: inline-flex;
+    flex-direction: column;
+    transition: 0.3s ease-in;
+}
+
+.rooms:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.rooms img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.rooms h2 {
+    margin: 10px 0;
+    color: var(--primary-color);
+}
+
+
+.rooms button {
+    width: 45%;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s ease-in;
+    height: 88%;
+    font-size: small;
+    margin-right: 4%;
+}
+
+.but1 {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.but2 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.but1:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--hover-text-color);
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.but2:hover {
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+    border: 1px solid var(--hover-text-color);
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .rooms {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-right {
+        margin: 10px 0;
+    }
+}

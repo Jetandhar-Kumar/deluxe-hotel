@@ -1,0 +1,93 @@
+.contact-form {
+    background: var(--accent-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+}
+
+.hiddenform {
+    display: none;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: larger;
+
+
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    width: 20%;
+}
+
+.contact-form button:hover {
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+    border: 1px solid var(--hover-text-color);
+    transform: scale(1.1);
+}
+
+.description {
+    padding: 20px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.description h1 {
+    margin-bottom: 20px;
+}
+
+.description p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.description strong {
+    color: var(--primary-color);
+}
+
+#showcontactform {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+#showcontactform:hover {
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+    border: 1px solid var(--hover-text-color);
+    transform: scale(1.1) translate(-50%);
+}
