@@ -5,8 +5,12 @@ document.getElementById("home").addEventListener("click", function () {
     window.location.href = "index.html"
 })
 
-document.getElementById('bookingForm').addEventListener('submit', function(event) {
-    let isValid = true;
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission for testing
+        alert("Form submitted successfully!");
+    });
+});
 
     // Name validation
     let name = document.getElementById('name').value;
@@ -50,4 +54,3 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
     if (!isValid) {
         event.preventDefault(); // Prevent form submission if validation fails
     }
-});
